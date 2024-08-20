@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './pages/home';
+import AboutUs from './pages/aboutUs';
+import IzFood from './pages/izyFood';
+import IzPay from './pages/izyPay';
+import IzRent from './pages/izyRent';
+import IzyProman from './pages/izyProman';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/aboutUs' element={<AboutUs/>}/>
+        <Route path='/izyFood' element={<IzFood/>}/>
+        <Route path='/izyPay' element={<IzPay/>}/>
+        <Route path='/izyRent' element={<IzRent/>}/>
+        <Route path='/izyProman' element={<IzyProman/>}/>
+      </Routes>
+    </BrowserRouter>
+  )
 }
-
-export default App;
