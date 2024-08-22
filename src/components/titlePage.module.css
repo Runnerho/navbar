@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 50px 0;
+    position: relative;
 }
 .title_of_page .text{
     width: 40%;
