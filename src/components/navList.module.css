@@ -24,6 +24,7 @@
     align-items: center;
     top: 30px;
     border-radius: 3px;
+    z-index: 2;
 }
 .navHeader .menu .list_of_pc .link{
     color: rgb(3, 6, 54);

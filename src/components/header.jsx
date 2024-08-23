@@ -1,6 +1,6 @@
 import NavList from "./navList";
-import styles from './header.module.css'
-import image from '../assets/images/logo.png'
+import styles from './header.module.css';
+import image from '../assets/images/logo.png';
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
